@@ -5,6 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?logo=vercel)](https://aegis-seven-theta.vercel.app)
 [![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1_AA-16a34a)](https://www.w3.org/TR/WCAG21/)
 
 Automated WCAG 2.1 AA accessibility scanning, bilingual parity checking, and AI-generated fix patches for Canadian federal government digital services.

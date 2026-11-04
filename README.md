@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aegis — AI-Powered Accessibility & Compliance Platform
+
+Automated WCAG 2.1 AA accessibility scanning, bilingual parity checking, and AI-generated fix patches for Canadian federal government digital services.
+
+## Features
+
+- **Automated WCAG Scanning** — Continuous scanning for WCAG 2.1 AA violations
+- **Bilingual Parity Checking** — Detects when French versions fall behind English
+- **AI-Generated Fix Patches** — Actual code fixes, not just reports
+- **Compliance Dashboard** — Deputy-minister-ready status dashboards
+- **Audit-Ready Reports** — Auto-generate reports for Treasury Board and Parliament
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS v4
+- Cheerio (HTML parsing)
+- OpenAI API (AI fix generation)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.example` to `.env.local`:
 
-## Learn More
+```
+OPENAI_API_KEY=your_key_here  # Optional — enables AI fix generation
+```
 
-To learn more about Next.js, take a look at the following resources:
+Without an API key, Aegis uses built-in fallback fixes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Government Procurement Fit
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **AI Source List** — Cognitive automation category
+- **SaaS Supply Arrangement** — Protected B level
+- **Buy Canadian Policy** — Canadian vendor priority
+- **Budget 2025** — $25.2B modernization funding alignment
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

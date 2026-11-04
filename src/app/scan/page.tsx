@@ -98,6 +98,7 @@ export default function ScanPage() {
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             placeholder="https://example.gc.ca"
+            aria-label="URL to scan"
             className="flex-1 px-4 py-3 border border-border rounded-lg bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
             required
           />

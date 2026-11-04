@@ -16,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <nav className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg">
+                Skip to main content
+              </a>
+              <nav className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <Link href="/" className="flex items-center gap-2">
@@ -26,23 +29,23 @@ export default function RootLayout({
                 <span className="font-display font-bold text-xl text-primary">Aegis</span>
               </Link>
               <div className="flex items-center gap-6">
-                <a href="/scan" className="text-sm font-medium text-muted hover:text-foreground transition-colors">
+                <Link href="/scan" className="text-sm font-medium text-muted hover:text-foreground transition-colors">
                   Scanner
-                </a>
-                <a href="/dashboard" className="text-sm font-medium text-muted hover:text-foreground transition-colors">
+                </Link>
+                <Link href="/dashboard" className="text-sm font-medium text-muted hover:text-foreground transition-colors">
                   Dashboard
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/scan"
                   className="px-4 py-2 bg-accent text-white text-sm font-medium rounded-lg hover:bg-accent-light transition-colors"
                 >
                   Start Scan
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </nav>
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <footer className="border-t border-border mt-24 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-muted">
             <p>Aegis — AI-Powered Accessibility & Compliance for Canadian Government Digital Services</p>

@@ -113,14 +113,9 @@ export default function DashboardPage() {
           {[58, 62, 65, 70, 68, 72, 75, 78, 74, 80, 77, 82].map((val, i) => (
             <div key={i} className="flex-1 flex flex-col items-center gap-1">
               <div
-                className="w-full bg-primary/20 rounded-t"
+                className="w-full bg-primary rounded-t"
                 style={{ height: `${val}%` }}
-              >
-                <div
-                  className="w-full bg-primary rounded-t"
-                  style={{ height: `${Math.min(val, 100)}%` }}
-                />
-              </div>
+              />
               <span className="text-xs text-muted">M{i + 1}</span>
             </div>
           ))}

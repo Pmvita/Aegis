@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -18,12 +19,12 @@ export default function RootLayout({
         <nav className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
-              <a href="/" className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
                   <span className="text-white font-bold text-sm font-display">A</span>
                 </div>
                 <span className="font-display font-bold text-xl text-primary">Aegis</span>
-              </a>
+              </Link>
               <div className="flex items-center gap-6">
                 <a href="/scan" className="text-sm font-medium text-muted hover:text-foreground transition-colors">
                   Scanner

@@ -186,8 +186,6 @@ export function scanHtml(html: string, url: string): ScanResult {
   }
 
   // Bilingual parity check
-  const enMatches = html.match(/lang=["']en["']/gi) || [];
-  const frMatches = html.match(/lang=["']fr["']/gi) || [];
   const enElements = (html.match(/<[^>]*lang=["']en["'][^>]*>/gi) || []).length;
   const frElements = (html.match(/<[^>]*lang=["']fr["'][^>]*>/gi) || []).length;
 

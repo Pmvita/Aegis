@@ -133,32 +133,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-3xl font-bold mb-4">
-              Built for Government Procurement
-            </h2>
-            <p className="text-blue-200 max-w-2xl mx-auto">
-              Aegis aligns with active Canadian federal procurement vehicles and policy priorities.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { label: "AI Source List", desc: "Cognitive automation category" },
-              { label: "SaaS Supply Arrangement", desc: "Protected B level" },
-              { label: "Buy Canadian Policy", desc: "Canadian vendor priority" },
-              { label: "Budget 2025", desc: "$25.2B modernization funding" },
-            ].map((item, i) => (
-              <div key={i} className="bg-white/10 rounded-lg p-6 text-center">
-                <div className="font-display font-bold text-lg mb-1">{item.label}</div>
-                <div className="text-sm text-blue-200">{item.desc}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl font-bold text-primary mb-4">

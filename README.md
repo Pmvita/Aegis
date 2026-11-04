@@ -1,5 +1,12 @@
 # Aegis — AI-Powered Accessibility & Compliance Platform
 
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![WCAG 2.1 AA](https://img.shields.io/badge/WCAG-2.1_AA-16a34a)](https://www.w3.org/TR/WCAG21/)
+
 Automated WCAG 2.1 AA accessibility scanning, bilingual parity checking, and AI-generated fix patches for Canadian federal government digital services.
 
 ## Features
@@ -36,13 +43,6 @@ OPENAI_API_KEY=your_key_here  # Optional — enables AI fix generation
 ```
 
 Without an API key, Aegis uses built-in fallback fixes.
-
-## Government Procurement Fit
-
-- **AI Source List** — Cognitive automation category
-- **SaaS Supply Arrangement** — Protected B level
-- **Buy Canadian Policy** — Canadian vendor priority
-- **Budget 2025** — $25.2B modernization funding alignment
 
 ## License
 
